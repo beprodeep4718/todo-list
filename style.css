@@ -1,0 +1,97 @@
+@font-face {
+    font-family: helvetica;
+    src: url(./font/HelveticaNowText-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+.cont {
+    width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, 
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 5px;
+}
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 1vw;
+}
+.main-list-cont {
+    width: 100%;
+    position: relative;
+}
+.input-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3.5vw;
+}
+.input-cont .input-text {
+    width: 80%;
+    height: 3.5vw;
+}
+.input-text input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    padding: 0 10px;
+}
+.input-cont .add {
+    width: 19%;
+    height: 100%;
+    background-color: #45FFCA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.add:hover {
+    background-color: #47d0a9;
+}
+.task-item {
+    padding: 8px 10px;
+    margin-top: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+.complete {
+    text-decoration: line-through;
+    color: rgb(53, 53, 53);
+}
+.delete {
+    padding: 4px;
+    border: none;
+    background-color: red;
+    color:  white;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
